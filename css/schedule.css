@@ -1,0 +1,278 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial sans-serif;
+}
+
+.logo img {
+  width: 100%;
+  max-height: 100px;
+  height: 100%;
+}
+
+.background {
+  background: transparent;
+  background-color: rgb(0, 0, 0) !important;
+}
+
+.nav-item:hover .nav-link:hover {
+  color: rgb(112, 112, 112) !important;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.dropdown-item:hover {
+  background-color: #444d4b;
+  transform: translateY(-2px);
+}
+
+.nav_dropdown_text {
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+  white-space: nowrap;
+}
+
+.dropdown_head {
+  background-color: #000000; 
+  border-radius: 0.7rem; 
+  padding: 0; 
+  min-width: 100%; 
+  width: 100%; 
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to bottom, #fff, #ffffff); /* ไล่สีขาวเทาเป็นพื้นหลัง */
+}
+
+h1 {
+  font-size: 48px;
+  color: #333;
+}
+
+.faq-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.faq-item {
+  padding: 20px 40px;
+  border-radius: 50px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  width: 300px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* เพิ่มเงาปุ่ม */
+}
+
+.faq-item:hover {
+  transform: scale(1.05); /* ขยายขนาดเล็กน้อยเมื่อ hover */
+  background-color: #333; /* เพิ่มสีเข้มขึ้นเพื่อเน้นความโดดเด่น */
+}
+
+.green {
+  background-color: #00c853;
+}
+.green:hover {
+  background-color: #00e676;
+}
+
+.blue {
+  background-color: #2979ff;
+}
+.blue:hover {
+  background-color: #448aff;
+}
+
+.pink {
+  background-color: #f50057;
+}
+.pink:hover {
+  background-color: #ff4081;
+}
+
+.red {
+  background-color: #d50000;
+}
+.red:hover {
+  background-color: #ff1744;
+}
+
+.orange {
+  background-color: #ff6d00;
+}
+.orange:hover {
+  background-color: #ff9100;
+}
+
+.grey {
+  background-color: #9e9e9e;
+}
+.grey:hover {
+  background-color: #bdbdbd;
+}
+
+.schedule-section {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(to bottom, #fff, #ffffff); /* ไล่สีขาวเทาเป็นพื้นหลัง */
+}
+
+h1 {
+  font-size: 48px;
+  color: #333;
+}
+
+.schedule-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.schedule-item {
+  padding: 20px 40px;
+  border-radius: 50px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  width: 300px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* เพิ่มเงาปุ่ม */
+}
+
+.schedule-item:hover {
+  transform: scale(1.05); /* ขยายขนาดเล็กน้อยเมื่อ hover */
+  background-color: #333; /* เพิ่มสีเข้มขึ้นเพื่อเน้นความโดดเด่น */
+}
+
+.green {
+  background-color: #00c853;
+}
+.green:hover {
+  background-color: #00e676;
+}
+
+.blue {
+  background-color: #2979ff;
+}
+.blue:hover {
+  background-color: #448aff;
+}
+
+.pink {
+  background-color: #f50057;
+}
+.pink:hover {
+  background-color: #ff4081;
+}
+
+.red {
+  background-color: #d50000;
+}
+.red:hover {
+  background-color: #ff1744;
+}
+
+.orange {
+  background-color: #ff6d00;
+}
+.orange:hover {
+  background-color: #ff9100;
+}
+
+.grey {
+  background-color: #9e9e9e;
+}
+.grey:hover {
+  background-color: #bdbdbd;
+}
+
+.schedule-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s ease, opacity 0.5s ease;
+}
+
+.schedule-overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.schedule-popup {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* เพิ่มเงาให้ป๊อปอัพ */
+}
+
+.schedule-popup h2 {
+  margin-top: 0;
+}
+
+.schedule-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.schedule-content {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้ตาราง */
+}
+
+table th, table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table th {
+  background-color: #333;
+  color: white;
+}
+
+table tr:hover td {
+  background-color: #f1f1f1;
+}
